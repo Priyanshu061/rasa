@@ -1,5 +1,7 @@
-version: "3.1"
+version: "2.0"
+
 stories:
+
 - story: happy path
   steps:
   - intent: greet
@@ -27,3 +29,16 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: greet and faq
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: faq
+  - action: utter_faq
+
+- story: Good Morning and Good Evening
+  Steps:
+  - intent: Good Morning
+  - action: utter_Good Morning
+  - intent: Good Evening
+  - action: utter_Good Evening

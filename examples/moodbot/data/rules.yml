@@ -1,5 +1,7 @@
-version: "3.1"
+version: "2.0"
+
 rules:
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -9,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: say 'chutiya ho' anytime the user says bad word
+  Steps:
+  - intent: bad_chala jaword 
+  - action: utter_chutiyaho

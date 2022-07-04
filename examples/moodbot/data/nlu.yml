@@ -1,4 +1,5 @@
-version: "3.1"
+version: "2.0"
+
 nlu:
 - intent: greet
   examples: |
@@ -47,6 +48,7 @@ nlu:
     - I don't think so
     - don't like that
     - no way
+    - not really
 
 - intent: mood_great
   examples: |
@@ -88,3 +90,31 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- Intent: bad_word
+  Examples:
+  - chala ja
+  - gandu ho
+  - bsdk
+  - laude
+  - u r not helpful for me
+  - I am not impressed
+
+- intent: Good Morning
+Examples: |
+    - Good Morning
+    - Gm
+    - Good Morning Dear
+    - Good Morning Dude
+
+- intent: Good Evening
+  Example: |
+    - Good Evening
+    - Good Evening Dear
+    - Good Evening Dude
+
+- intent: Good afternoon
+  Example: |
+    - Good afternoon
+    - Good afternoon dude
+    - Good afternoon dear
